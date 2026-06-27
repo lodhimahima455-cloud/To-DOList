@@ -22,18 +22,21 @@ justify-content:center;
 
 
 align-items:center;
+background-image:
+    linear-gradient(
+        rgba(255,255,255,0.55),
+        rgba(255,255,255,0.55)
+    ),
+    url("https://media.istockphoto.com/id/1331856494/photo/empty-notebook-for-writing-dreams-and-ideas-with-different-stat.jpg?s=612x612&w=0&k=20&c=Tnz8JkjQNU_Z5AHhNH_64h5OVpBB2RY8oi3Z_DrQzdg=");
 
 
+    background-size:cover;
 
-background:
+    background-position:center;
 
-linear-gradient(
-135deg,
-#667eea,
-#764ba2
-);
+    background-repeat:no-repeat;
 
-
+    background-attachment:fixed;
 
 padding:20px;
 
@@ -70,11 +73,7 @@ linear-gradient(
 width:450px;
 
 
-background:
-
-rgba(255,255,255,0.18);
-
-
+background:#92f2f2;
 
 backdrop-filter:blur(20px);
 
@@ -86,14 +85,17 @@ padding:30px;
 
 border-radius:25px;
 
+box-shadow:
+0 20px 40px rgba(0,0,0,0.15);
 
-
+}
+/* 
 box-shadow:
 
 0 25px 50px rgba(0,0,0,.3);
 
 
-}
+} */
 
 
 
@@ -111,7 +113,7 @@ justify-content:space-between;
 align-items:center;
 
 
-color:white;
+color:rgb(82, 4, 4);
 
 
 }
@@ -127,7 +129,36 @@ font-size:30px;
 
 }
 
+.logo-title{
 
+display:flex;
+
+align-items:center;
+
+gap:15px;
+
+}
+
+
+.logo-title img{
+
+width:80px;
+
+height:80px;
+
+border-radius:20px;
+
+
+}
+
+
+.logo-title h1{
+
+font-size:35px;
+
+color:#4b164c;
+
+}
 
 
 #theme{
@@ -173,7 +204,7 @@ transform:rotate(20deg) scale(1.1);
 .tag{
 
 
-color:white;
+color:rgb(82, 2, 2);
 
 
 text-align:center;
@@ -230,7 +261,38 @@ font-size:15px;
 }
 
 
+#time{
 
+
+padding:12px;
+
+
+border:none;
+
+
+border-radius:12px;
+
+
+outline:none;
+
+
+}
+
+
+
+.duration{
+
+
+font-size:13px;
+
+
+color:#777;
+
+
+margin-top:5px;
+
+
+}
 
 form button{
 
@@ -491,7 +553,7 @@ margin-top:20px;
 background:#22c55e;
 
 
-color:white;
+color:rgb(249, 244, 243);
 
 
 padding:15px;
@@ -523,6 +585,27 @@ display:block;
 }
 
 
+#instruction{
+
+text-align:center;
+
+margin:15px 0;
+
+color:rgb(232, 40, 43);
+
+font-size:14px;
+
+opacity:.9;
+
+background:rgba(255,255,255,0.15);
+
+padding:10px;
+
+border-radius:15px;
+
+animation:pulse 2s infinite;
+
+}
 
 
 

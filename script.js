@@ -15,6 +15,9 @@ document.getElementById("form");
 const input =
 document.getElementById("input");
 
+const time =
+document.getElementById("time");
+
 
 const list =
 document.getElementById("list");
@@ -60,6 +63,7 @@ todos.push({
 id:Date.now(),
 
 text:input.value,
+duration:time.value,
 
 complete:false
 
@@ -70,6 +74,7 @@ complete:false
 
 input.value="";
 
+time.value="";
 
 save();
 
@@ -115,12 +120,30 @@ li.classList.add("done");
 
 li.innerHTML=
 
-
 `
 
+<div>
+
+
 <span>
+
 ${todo.text}
+
 </span>
+
+
+
+<p class="duration">
+
+⏰ ${todo.duration || "No time set"}
+
+</p>
+
+
+
+</div>
+
+
 
 
 <button class="delete">
